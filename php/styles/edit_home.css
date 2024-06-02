@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif; /* Standard font */
+    background: #f5f5f5; /* Light background color */
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2rem; /* Larger font size */
+    color: #333; /* Dark gray color */
+    margin-top: 40px; /* Margin at the top for separation */
+}
+
+form {
+    max-width: 600px; /* Restrict max width */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Padding for the form */
+    border: 1px solid #ddd; /* Light border */
+    background: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+    display: block; /* Labels should be block-level */
+    font-weight: bold; /* Bold font */
+    color: #333; /* Dark color */
+    margin-bottom: 10px; /* Space below labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between form elements */
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+}
+
+textarea {
+    height: 100px; /* Fixed height for text area */
+}
+
+button {
+    background: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.line {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between elements */
+}

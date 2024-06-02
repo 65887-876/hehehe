@@ -1,0 +1,165 @@
+
+.home-section {
+    max-width: 1200px; /* Restrict max width for the home section */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Padding for the section */
+}
+
+.home-title {
+    text-align: center; /* Center the title */
+    font-size: 2rem; /* Large font size */
+    margin-top: 60px; /* Margin-top for separation */
+}
+
+.home-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.home-card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    background: #fff; /* White background */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Default shadow */
+    transition: box-shadow 0.2s; /* Transition for shadow only */
+    display: flex; /* Flex layout for arranging content */
+    flex-direction: column; /* Vertical alignment */
+}
+
+.home-card:hover {
+    transform: none; /* No scaling on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Softer shadow on hover */
+}
+
+.home-card-image-container {
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    overflow: hidden; /* Prevent image overflow */
+}
+
+.home-card-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.home-card-content {
+    padding: 20px; /* Padding around content */
+    flex-grow: 1; /* Allow content to grow */
+}
+
+.home-card-buttons {
+    display: flex; /* Flex layout for buttons */
+    justify-content: space-between; /* Space between buttons */
+    padding: 10px 20px; /* Padding around buttons */
+    border-top: 1px solid #ddd; /* Border to separate content */
+    background: #f9f9f9; /* Light background color */
+}
+
+.buy-btn {
+    background: #28a745; /* Green background for "Buy" */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Indicate clickability */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.buy-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.contact-btn {
+    background: #fd7e14; /* Orange background for "Contact Seller" */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Indicate clickability */
+    transition: background-color 0.2s; /* Smooth transition */
+}
+
+.contact-btn:hover {
+    background-color: #e46600; /* Darker orange on hover */
+}
+
+.favorite-btn {
+    background: transparent; /* Transparent background */
+    color: red; /* Red color for the heart icon */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Ensure clickability */
+    transition: opacity 0.2s; /* Smooth transition */
+}
+
+.favorite-btn:hover {
+    opacity: 0.7; /* Change opacity on hover */
+}
+
+.add-house-card {
+    display: flex; /* Flex layout for centering content */
+    flex-direction: column; /* Vertical alignment */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    border: 2px dashed #ccc; /* Dashed border for special functionality */
+    border-radius: 10px; /* Rounded corners */
+    background: #f9f9f9; /* Light background */
+    height: 95%; /* Consistent height with other cards */
+    cursor: pointer; /* Indicate clickability */
+    transition: background 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.add-house-card:hover {
+    background: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.plus-sign {
+    font-size: 3rem; /* Large font for the plus sign */
+    color: #555; /* Dark gray color */
+}
+
+.add-house-card a {
+    text-decoration: none; /* No underline */
+    color: #333; /* Text color */
+    text-align: center; /* Center alignment */
+}
+
+h2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 40px 0px;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hide by default */
+    position: fixed; /* Fixed position for overlay */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Modal content styles */
+.modal-content {
+    background: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding */
+    max-width: 400px; /* Restrict width */
+    text-align: center; /* Center the content */
+}
+
+/* Close button styles */
+.close-btn {
+    float: right; /* Position on the top-right */
+    font-size: 1.5rem; /* Larger size */
+    cursor: pointer; /* Indicate clickability */
+}
